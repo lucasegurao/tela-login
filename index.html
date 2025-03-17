@@ -5,38 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela Login</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <img src="./assets/img/img-train.png" height="1031" width="687" alt="imagem">
-        <div class="login">
-                <div class="title">
+        <img src="./assets/img/img-train.png" alt="imagem">
+        <div class="container">
+            <div class="login">
+                <header>
                     <p>Bem-vindo!</p>
-                </div>
-                <div class="subtitle">
-                    <h1>Faça seu login</h1>
-                    <p>Utilize as credenciais fornecidas <br> pelo administrador</p>
-                </div>
-
-            <div class="email">
-                <form action="email">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="Entre com seu E-mail">
-                </form>
-            </div>
-                <div class="senha">
-                    <form action="senha">
+                    <div class="title">
+                        <h1>Faça seu login</h1>
+                        <p>Utilize as credenciais fornecidas pelo administrador</p>
+                    </div>
+                </header>
+                <form>
+                    <div class="input-user">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Entre com seu E-mail">
+                    </div>
+                    <div class="input-user">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Entre com sua Senha">
-                    </form>
-                </div>
-                <div class="opcoes">
-                    <label><input type="checkbox"> Lembrar-me</label>
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
-                <div class="btn">
-                    <button type="submit">Entrar</button>
-                </div>
+                        <div class="icon">
+                            <input type="password" id="senha" placeholder="Entre com sua Senha">
+                            <img src="./assets/img/icon.svg" alt="icone">
+                        </div>
+                    </div>
+                    <div class="input-user-checkbox">
+                        <div>
+                            <label for="">Lembrar-me</label>
+                            <input type="checkbox">
+                        </div>
+                        <p>Esqueceu a senha?</p>
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
         </div>
 </body>
 </html>
